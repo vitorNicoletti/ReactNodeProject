@@ -1,0 +1,49 @@
+.card {
+    background-color: #ffffff;
+    padding: 16px;
+    margin: 32px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .card:hover {
+    transform: scale(1.02);
+  }
+  
+  .card h3 {
+    margin-bottom: 8px;
+    color: #333;
+  }
+  
+  .card p {
+    margin: 4px 0;
+    color: #555;
+  }
+  
+  .cardbuttons {
+    margin-top: 12px;
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+  
+  .cardbuttons button {
+    padding: 8px 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .cardbuttons button:hover {
+    background-color: #0056b3;
+  }
+  
+  .checkbox {
+    margin: 8px 0;
+  }
+  
