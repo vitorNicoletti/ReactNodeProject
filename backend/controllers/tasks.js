@@ -28,11 +28,16 @@ const allTasks = (req, res) => {
 const createTask = (req, res) => {
     const { completo, titulo, descricao, feitor } = req.body;
 
-    if (!titulo || titulo.trim() === '') {
+    if (
+        !titulo || titulo.trim() === '' ||
+        !descricao || descricao.trim() === '' ||
+        !feitor || feitor.trim() === ''
+    ) {
         return res.status(401).json({
-            message: "ERROR: informe um título para a nova tarefa"
+            message: "ERROR: informe todos os campos obrigatórios (título, descrição e feitor)"
         });
     }
+    
 
     const sql = `
         INSERT INTO tarefas (completa, titulo, descricao, feitor)
