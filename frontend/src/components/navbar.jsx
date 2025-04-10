@@ -6,6 +6,7 @@ const NavBar = () => {
     <div className={styles.navbar}>
       <Link to="/" className={styles.navlink}>Listar</Link>
       <Link to="/adm" className={styles.navlink}>ADM</Link>
+      <Link className={styles.navlink}>Vitor Nicoletti</Link>
     </div>
   );
 };
